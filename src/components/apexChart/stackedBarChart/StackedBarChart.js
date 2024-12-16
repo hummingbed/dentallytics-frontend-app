@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactApexChart from 'react-apexcharts';
 
-const StackedBarChart = ({ data, categories, colors, chartShape, height, width }) => {
+const StackedBarChart = ({ data, categories, colors, chartShape, height, width, colorsPosition, colorAllignment }) => {
   const options = {
     chart: {
       type: 'bar',
@@ -38,8 +38,8 @@ const StackedBarChart = ({ data, categories, colors, chartShape, height, width }
     },
     colors: colors, // Dynamically passed colors for the segments
     legend: {
-      position: 'top',
-      horizontalAlign: 'center',
+      position: colorsPosition, //'bottom','top'
+      horizontalAlign: colorAllignment, //'center',
     },
   };
 

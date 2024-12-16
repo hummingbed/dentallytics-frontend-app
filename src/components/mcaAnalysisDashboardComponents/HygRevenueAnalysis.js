@@ -47,7 +47,7 @@ const HygRevenueAnalysis = () => {
                     </div>
                 </div>
                 <p className='text-center fw-bold'>DDS Revenue Analysis (Deemeber 2024)</p>
-                <StackedBarChart data={data} categories={categories} colors={colors} chartShape={true} height={200} width={50} />
+                <StackedBarChart data={data} categories={categories} colors={colors} chartShape={true} height={200} width={50} colorsPosition={'top'} colorAllignment={'center'} />
             </div>
         </div>
     );
