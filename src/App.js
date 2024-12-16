@@ -1,17 +1,19 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
-
+import { BrowserRouter as Router } from 'react-router-dom';
 import routes from './route/routes';
-import MainLayout from "./layouts/MainLayout/MainLayout"; 
+import MainLayout from "./layouts/MainLayout/MainLayout";
 
 function App() {
   return (
-    <div className="App">
-       <MainLayout>
-        {routes}
-      </MainLayout>
-    </div>
+    <Router>
+      <div className="App">
+        <MainLayout>
+          {routes}
+        </MainLayout>
+      </div>
+    </Router>
+
   );
 }
 
 export default App;
+

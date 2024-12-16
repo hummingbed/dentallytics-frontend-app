@@ -4,11 +4,11 @@ import "./Sidebar.styles.css";
 const Sidebar = () => {
   return (
     <aside className="sidebar">
-      <ul className="sidebar-links">
-        <li><a href="/dashboard">Dashboard</a></li>
-        <li><a href="/reports">Reports</a></li>
-        <li><a href="/metrics">Metrics</a></li>
-        <li><a href="/settings">Settings</a></li>
+      <ul className="#">
+        {/* <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Metrics</a></li>
+        <li><a href="#">Settings</a></li> */}
       </ul>
     </aside>
   );

@@ -30,6 +30,7 @@ export const chartDataService = createApi({
         }
       },
     }),
+    //new API
   }),
 });
 
